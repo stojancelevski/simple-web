@@ -1,0 +1,210 @@
+﻿<html>
+
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="styles1.css" />
+	<script src="jquery-3.2.1.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="ccc/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/css.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/bootstrap-social.css" rel="stylesheet">
+</head>
+<style>
+	body {
+		background-image: url('gif6.gif');
+		background-size: cover;
+	}
+
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		margin: 2px 2px;
+	}
+
+	.fa:hover {
+		opacity: 0.5;
+	}
+
+	.fa-youtube {
+		background: #bb0000;
+		color: white;
+	}
+
+	.fa-facebook {
+		background: #3B5998;
+		color: white;
+	}
+
+	.fa-twitter {
+		background: #55ACEE;
+		color: white;
+	}
+
+	.fa-google {
+		background: #dd4b39;
+		color: white;
+	}
+</style>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				    aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<span class="glyphicon glyphicon-music"></span>
+				</a>
+
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="pop.html">Pop music</a>
+					</li>
+					<li>
+						<a href="rock.html">Rock music</a>
+					</li>
+					<li>
+						<a href="jazz.html">Jazz</a>
+					</li>
+					<li>
+						<a href="Classical.html">Classical music</a>
+					</li>
+					<li class="active">
+						<a href="gallery.html">Gallery</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="fa fa-google" href="http://google.com/+"></a>
+						<li>
+							<a class="fa fa-facebook" href="http://www.facebook.com/"> </a>
+							<li>
+								<a class="fa fa-twitter" href="http://twitter.com/"></a>
+								<li>
+									<a class="fa fa-youtube" href="http://youtube.com/"></a>
+									<li>
+										<a class="fa fa-envelope-o" href="mailto:"></a>
+										<li>
+											<div>
+												<form class="navbar-form" role="search">
+													<div class="form-group">
+														<form method="get" action="http://www.google.com/search">
+															<input type="text" name="q" placeholder="search" id="searchBar">
+															<input type="submit" value="search" id="searchButton" onclick="search()">
+														</form>
+													</div>
+											</div>
+											<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+	</nav>
+
+	<hr>
+	<div class="container">
+		<h1 style="color:white" align="center">Images Gallery</h1>
+		<p style="color:white">Pop music artist:</p>
+		<div class="row">
+			<div class="col-md-3">
+				<img class="crop-img" src="pop1.jpg" alt="pop1" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="pop5.jpg" alt="pop5" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="pop3.jpg" alt="pop3" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="pop4.jpg" alt="pop4" />
+			</div>
+		</div>
+		<p style="color:white">Classical music artist:</p>
+		<div class="row">
+			<div class="col-md-3">
+				<img class="crop-img" src="classi1.jpg" alt="classi1" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="classi2.jpg" alt="classi2" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="classi3.jpg" alt="classi3" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="classi4.jpg" alt="classi4" />
+			</div>
+		</div>
+		<p style="color:white">Rock music artist:</p>
+		<div class="row">
+			<div class="col-md-3">
+				<img class="crop-img" src="rock1.jpg" alt="rock1" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="rock2.jpg" alt="rock2" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="rock3.jpg" alt="rock3" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="rock4.jpg" alt="rock4" />
+			</div>
+		</div>
+		<p style="color:white">Jazz music artist:</p>
+		<div class="row">
+			<div class="col-md-3">
+				<img class="crop-img" src="jazz4.jpg" alt="jazz4" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="jazz5.jpg" alt="jazz5" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="jazz8.jpg" alt="jazz8" />
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" src="jazz7.jpg" alt="jazz7" />
+			</div>
+		</div>
+
+		<div class="row" align="center">
+			<div class="col-md-12">
+				<img id="bigImage" class="large-img" src="pop1.jpg" alt="pop1" />
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(".crop-img").click(function () {
+			$("#bigImage").attr('src',
+				$(this).attr('src'));
+		});
+
+		function search() {
+			var search = document.getElementById("searchBar").value;
+			var url = 'https://www.google.com/search?q=' + search;
+			window.open(url, "_blank");
+
+		}
+	</script>
+</body>
+
+</html>

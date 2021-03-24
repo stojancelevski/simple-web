@@ -1,0 +1,184 @@
+﻿<html>
+
+<head>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="ccc/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/css.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/bootstrap-social.css" rel="stylesheet">
+	<style>
+		body {
+			background-image: url('musicbg1.jpg');
+			background-size: cover;
+		}
+
+		.fa {
+			padding: 20px;
+			font-size: 30px;
+			width: 50px;
+			text-align: center;
+			text-decoration: none;
+			margin: 2px 2px;
+		}
+
+		.fa:hover {
+			opacity: 0.5;
+		}
+
+		.fa-youtube {
+			background: #bb0000;
+			color: white;
+		}
+
+		.fa-facebook {
+			background: #3B5998;
+			color: white;
+		}
+
+		.fa-twitter {
+			background: #55ACEE;
+			color: white;
+		}
+
+		.fa-google {
+			background: #dd4b39;
+			color: white;
+		}
+	</style>
+
+
+	<title>Pop Music</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				    aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<span class="glyphicon glyphicon-music"></span>
+				</a>
+
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li class="active">
+						<a href="pop.html">Pop music</a>
+					</li>
+					<li>
+						<a href="rock.html">Rock music</a>
+					</li>
+					<li>
+						<a href="jazz.html">Jazz</a>
+					</li>
+					<li>
+						<a href="Classical.html">Classical music</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="fa fa-google" href="http://google.com/+"></a>
+						<li>
+							<a class="fa fa-facebook" href="http://www.facebook.com/"> </a>
+							<li>
+								<a class="fa fa-twitter" href="http://twitter.com/"></a>
+								<li>
+									<a class="fa fa-youtube" href="http://youtube.com/"></a>
+									<li>
+										<a class="fa fa-envelope-o" href="mailto:"></a>
+										<li>
+											<div>
+												<form class="navbar-form" role="search">
+													<div class="form-group">
+														<form method="get" action="http://www.google.com/search">
+															<input type="text" name="q" placeholder="search" id="searchBar">
+															<input type="submit" value="search" id="searchButton" onclick="search()">
+														</form>
+													</div>
+											</div>
+											<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+	</nav>
+	<br>
+	<br>
+	<h1 style="color:blue" align="center">POP Music</h1>
+
+
+	<div align="justify">
+		<font face="Arial, Helvetica, sans-serif" size="4" color="blue" style="text-align:right">Pop music is a genre of popular music that originated in its modern form in the United States and United Kingdom during
+			the mid-1950s.Although much of the music that appears on record charts is seen as pop music, the genre is distinguished
+			from chart music. Pop music is eclectic, and often borrows elements from other styles such as urban, dance, rock, Latin,
+			and country; nonetheless, there are core elements that define pop music. Identifying factors include generally short to
+			medium-length songs written in a basic format (often the verse-chorus structure), as well as common use of repeated choruses
+			and melodic tunes</font>
+	</div>
+
+	<br>
+	<div align="center">
+		<embed height="400" width="400" src="pop.mp4">
+		</embed>
+		<br>
+		<br>
+	</div>
+	<p style="color:blue">
+		<b>Most popular pop artist:</b>
+	</p>
+	<marquee onMouseOver="javascript:stop()" onMouseOut="javascript:start()" direction="left" behavior="scroll">
+		<a class="s" href="pop6.jpg" target="_blank">
+			<img src="pop6.jpg" width="200" height="200">
+		</a>
+		<a class="s" href="pop5.jpg" target="_blank">
+			<img src="pop5.jpg" width="200" height="200">
+		</a>
+		<a class="s" href="pop4.jpg" target="_blank">
+			<img src="pop4.jpg" width="200" height="200">
+		</a>
+		<a class="s" href="pop3.jpg" target="_blank">
+			<img src="pop3.jpg" width="200" height="200">
+		</a>
+		<a class="s" href="pop2.jpg" target="_blank">
+			<img src="pop2.jpg" width="200" height="200">
+		</a>
+		<a class="s" href="pop1.jpg" target="_blank">
+			<img src="pop1.jpg" width="200" height="200">
+		</a>
+		<a class="s" href="pop7.jpg" target="_blank">
+			<img src="pop7.jpg" width="200" height="200">
+		</a>
+
+
+		<br>
+		<br>
+		<p>
+</body>
+<script>
+	function search() {
+		var search = document.getElementById("searchBar").value;
+		var url = 'https://www.google.com/search?q=' + search;
+		window.open(url, "_blank");
+
+	}
+</script>
+
+</html>

@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+    <script>
+        var user_name;
+        user_name = prompt("Please enter your name to take access in this page!");
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comptaible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brand</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ccc/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+</head>
+<style>
+    body {
+
+        background-image: url('bg3.jpg');
+        background-size: cover;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 2px 2px;
+    }
+
+    .fa:hover {
+        opacity: 0.5;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-google {
+        background: #dd4b39;
+        color: white;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <span class="glyphicon glyphicon-music"></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="pop.html">Pop music</a>
+                    </li>
+                    <li>
+                        <a href="rock.html">Rock music</a>
+                    </li>
+                    <li>
+                        <a href="jazz.html">Jazz</a>
+                    </li>
+                    <li>
+                        <a href="Classical.html">Classical music</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="fa fa-google" href="http://google.com/+"></a>
+                        <li>
+                            <a class="fa fa-facebook" href="http://www.facebook.com/"> </a>
+                            <li>
+                                <a class="fa fa-twitter" href="http://twitter.com/"></a>
+                                <li>
+                                    <a class="fa fa-youtube" href="http://youtube.com/"></a>
+                                    <li>
+                                        <a class="fa fa-envelope-o" href="mailto:"></a>
+                                        <li>
+                                            <div>
+                                                <form class="navbar-form" role="search">
+                                                    <div class="form-group">
+                                                        <form method="get" action="http://www.google.com/search">
+                                                            <input type="text" name="q" placeholder="search" id="searchBar">
+                                                            <input type="submit" value="search" id="searchButton" onclick="search()">
+                                                        </form>
+                                                    </div>
+                                            </div>
+                                            <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+    </nav>
+
+
+    <header class="jumbotron">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                    <h1>Types of music</h1>
+                    <p style="padding:40px;"></p>
+                    <p>Music can change the world, because it change people!</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <img src="gitara.png" width="400" height="200">
+                </div>
+            </div>
+        </div>
+        <div style="text-align: right">
+            <font face="Verdana" size="3" color="#000000">
+
+                <p1>Clock:</p1>
+                <p1 id="Clock"></p1>
+            </font>
+        </div>
+    </header>
+
+
+
+
+    <script>
+        var myVar = setInterval(function () {
+            myTimer()
+        }, 1000);
+
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("Clock").innerHTML = t;
+        }
+    </script>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+                <h3>~Bob Marley </h3>
+                <h4>One good thing about music,when is hits you, you feel no pain.</h4>
+                <h3>~Johnny Cash </h3>
+                <h4>You build on failure.Use it as a
+                    <br> stepping stone and close the door on the past.Don't try to forget the
+                    <br> mistakes, but don't dwell on it.</h4>
+                <h3>~Bob Dylan</h3>
+                <h4>Inspiration is hard to come by.You have to take it where you find it.</h4>
+                <h3>~A.R.Rahman</h3>
+                <h4>Music is all about transporting people; speaking a language which languages fail to express.</h4>
+                <h3>~Jimi Henrix</h3>
+                <h4>When the power of love overcomes the love od power, the world will know peace. </h4>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <footer style="background:darkgray">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-s-offset-1">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+
+                            <li class="active">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a>
+                            </li>
+
+
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div style="text-align:center">
+                    <p>Copyrights &copy; 2017 by Emilija Matlioska & Aleksandra Poposka
+                    </p>
+                </div>
+
+
+        </footer>
+
+
+        <script src="https://ajax.google.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+<script>
+    function search() {
+        var search = document.getElementById("searchBar").value;
+        var url = 'https://www.google.com/search?q=' + search;
+        window.open(url, "_blank");
+    }
+</script>
+
+</html>
