@@ -1,42 +1,44 @@
-﻿<<style type="text/css">
-{
-   margin:10px;
-   padding:10px;
+﻿<
+<
+style type
+
+=
+"text/css"
+> {
+    margin: 10px;
+    padding: 10px;
 }
 
-body
-   {
-     margin:0 auto;
-     width:850px;
-     font-family:Arial, Helvetica, sans-serif;   
-     background-attachment:fixed;  
-   } 
-   
-
-
-
-div a:link,div a:visited
-{
-display:block;
-font-weight:bold;
-color:#ffffff;
-background-color:black;
-width:100px;
-text-align:center;
-padding:11px;
-text-decoration:none;
+body {
+    margin: 0 auto;
+    width: 850px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
 }
-   
 
 
-   h1
-   { color:white;
-     font-style:oblique;
-     text-align:center;
-     font-size:30px;
-     line-height:10px;
-     padding:3px 0;
-     text-shadow:2px 2px 10px black;
-   }
-   
-  </style>
+div a:link, div a:visited {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: black;
+    width: 100px;
+    text-align: center;
+    padding: 11px;
+    text-decoration: none;
+}
+
+
+h1 {
+    color: white;
+    font-style: oblique;
+    text-align: center;
+    font-size: 30px;
+    line-height: 10px;
+    padding: 3px 0;
+    text-shadow: 2px 2px 10px black;
+}
+
+<
+/
+style >
